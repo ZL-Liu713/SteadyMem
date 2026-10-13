@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-13T09:03:23.070489+00:00",
+  "type": "read_only_remote_inspection",
+  "remote_host": "fdbd:dccd:cdc2:12d1:0:1fc::",
+  "ssh_user": "tiger",
+  "ssh_port": 11547,
+  "workspace": "/mnt/bn/ecom-cyq-redirect/liuzhonglie/SteadyMem",
+  "command": "hostname\ncd /mnt/bn/ecom-cyq-redirect/liuzhonglie/SteadyMem\npwd\nnvidia-smi --query-gpu=index,name,memory.total,memory.used,utilization.gpu --format=csv,noheader\nps -p 4285 -o pid,user,args\npython3 -c 'from pathlib import Path; import hashlib; p=Path(\"docs/sources/feishu-kda-rev12.md\"); print(\"shared_snapshot_sha256=\" + hashlib.sha256(p.read_bytes()).hexdigest())'\n",
+  "exit_code": 0,
+  "stdout": "n124-161-064\n/mnt/bn/ecom-cyq-redirect/liuzhonglie/SteadyMem\n0, NVIDIA H100 80GB HBM3, 81559 MiB, 9259 MiB, 99 %\n1, NVIDIA H100 80GB HBM3, 81559 MiB, 7585 MiB, 98 %\n2, NVIDIA H100 80GB HBM3, 81559 MiB, 7585 MiB, 96 %\n3, NVIDIA H100 80GB HBM3, 81559 MiB, 7585 MiB, 95 %\n4, NVIDIA H100 80GB HBM3, 81559 MiB, 7585 MiB, 94 %\n5, NVIDIA H100 80GB HBM3, 81559 MiB, 7585 MiB, 93 %\n6, NVIDIA H100 80GB HBM3, 81559 MiB, 7585 MiB, 94 %\n7, NVIDIA H100 80GB HBM3, 81559 MiB, 7345 MiB, 91 %\n    PID USER     COMMAND\n   4285 tiger    python3 /mnt/bn/junting-dev/liuzhonglie/gpu_occ2.py --t 1 --gpus 0,1,2,3,4,5,6,7 --per-gpu-batch 320\nshared_snapshot_sha256=c36049aec3fe6ebe8a930dfecae040ca021927a9248ff2a00f4354d6b3cb9b27\n",
+  "stderr": ""
+}

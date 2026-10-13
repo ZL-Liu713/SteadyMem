@@ -1,0 +1,13 @@
+{
+  "source_url": "https://bytedance.sg.larkoffice.com/docx/AipDdksJ4oS2jXxW5rUlwZm8gJg",
+  "document_id": "AipDdksJ4oS2jXxW5rUlwZm8gJg",
+  "revision_id": 12,
+  "title": "KDA 有限记忆的选择性维护：研究问题、算法方案与实验计划",
+  "fetched_at_utc": "2026-10-13T09:01:16.014331+00:00",
+  "identity": "user",
+  "format": "markdown",
+  "fetch_command": "lark docs fetch --as user --doc https://bytedance.sg.larkoffice.com/docx/AipDdksJ4oS2jXxW5rUlwZm8gJg --scope full --detail simple --doc-format markdown",
+  "snapshot_file": "feishu-kda-rev12.md",
+  "sha256": "c36049aec3fe6ebe8a930dfecae040ca021927a9248ff2a00f4354d6b3cb9b27",
+  "status": "历史原稿快照；当前项目定义与路线评估见上层文档；归档允许规范化文件末尾换行。"
+}
